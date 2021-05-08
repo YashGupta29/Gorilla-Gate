@@ -1,0 +1,358 @@
+#roadmap {
+  padding: 100px 0 50px;
+  color: #fff;
+}
+.owl-stage {
+  display: flex;
+}
+.owl-nav {
+  position: relative;
+}
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.small_space {
+  margin-top: 20px;
+}
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+.owl-carousel,
+.owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.timeline::before {
+  background-color: rgba(255, 255, 255, 0.2);
+  content: "";
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  width: 100%;
+}
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+.owl-height {
+  transition: height 0.5s ease-in-out;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+}
+.timeline_box {
+  margin-top: 45px;
+  position: relative;
+  text-align: center;
+}
+.roadmap_inner,
+.timeline_inner {
+  border-radius: 5px;
+  padding: 10px 5px;
+  position: relative;
+}
+
+.timeline_circle {
+  background-color: #ffffff;
+  border-radius: 100%;
+  height: 13px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -34px;
+  width: 13px;
+}
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.timeline_circle::before {
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: -6px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.roadmap_box h6,
+.timeline_box h6 {
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #5957cd;
+}
+
+.h6,
+h6 {
+  font-size: 1rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+.roadmap_box p,
+.timeline_box p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.timeline_box.complete::before {
+  content: "";
+  position: absolute;
+  left: -50%;
+  top: -30px;
+  background-color: #fff;
+  height: 5px;
+  z-index: -2;
+  width: 110%;
+  margin-left: -30px;
+}
+.timeline_box {
+  margin-top: 45px;
+  position: relative;
+  text-align: center;
+}
+
+.roadmap_box.current .roadmap_inner::before,
+.timeline_box.current .timeline_inner::before {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff67cb;
+}
+.roadmap_box.current .roadmap_inner::before,
+.timeline_box.current .timeline_inner::before {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff67cb;
+  border-style: solid;
+  border-width: 0 8px 8px;
+  content: "";
+  height: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -8px;
+  width: 0;
+}
+.timeline_circle {
+  background-color: #fff;
+  border-radius: 100%;
+  height: 13px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: -34px;
+  width: 13px;
+}
+.navbar-expand-lg .navbar-nav > li > .nav-link.active::before,
+.single_roadmap.roadmap_done .roadmap_icon,
+.rd_complete .roadmap_icon,
+.roadmap_box.current .roadmap_inner,
+.roadmap .owl-nav i:hover,
+.box_roadmap .roadmap_inner::after,
+.tab-link.active,
+.tab-link.active:hover,
+.tab-link:hover,
+.v_light_dark .tab-link.active,
+.v_light_dark .tab-link.active:hover,
+.v_light_dark .tab-link:hover,
+.v_royal_blue .tab-link.active,
+.v_royal_blue .tab-link.active:hover,
+.v_royal_blue .tab-link:hover,
+.tab_nav_s4 li.nav-item a.active,
+.timeline_box.complete .timeline_circle::before,
+.timeline_box.complete::before,
+.timeline_box.current .timeline_inner,
+.timeline .owl-nav i:hover {
+  background-color: #ff69c9;
+}
+.tags li a:hover,
+.dl_lan li a:hover,
+.doc_list li a,
+.video_wrap::before,
+.tab_nav_s4 li.nav-item a.active,
+.timeline_box.complete .timeline_circle::before {
+  border-color: #ff69c9;
+  z-index: -1;
+}
+.timeline_circle::before {
+  border: 2px solid #ff69c9 !important;
+  border-radius: 100%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: -6px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.timeline_circle::before {
+  border: 2px solid #ff69c9;
+  border-radius: 100%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: -6px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.owl-nav > button {
+  position: absolute;
+}
+.roadmap .owl-nav .disabled i,
+.timeline .owl-nav .disabled i {
+  background-color: #ffffff !important;
+  color: #5957cd;
+}
+.timeline .owl-nav i {
+  background-color: #ffffff;
+  border-radius: 100%;
+  color: #5957cd;
+  display: block;
+  font-size: 26px;
+  height: 33px;
+  line-height: 37px;
+  text-align: center;
+  width: 33px;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.timeline .owl-prev {
+  left: -10px;
+}
+
+.timeline .owl-prev,
+.timeline .owl-next {
+  position: absolute;
+  top: -143px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.timeline .owl-prev:hover,
+.timeline .owl-next:hover {
+  color: #fff;
+  background-color: #ff69c9;
+}
+
+.timeline .owl-next {
+  right: -10px;
+}
+
+.timeline .owl-prev > span,
+.timeline .owl-next > span {
+  position: absolute;
+  z-index: 50;
+  top: -30px;
+  font-size: 50px;
+}
+.timeline .owl-prev > span {
+  left: 3px;
+}
+.timeline .owl-next > span {
+  left: 7px;
+}
+.owl-dots {
+  display: none;
+}

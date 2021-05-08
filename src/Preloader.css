@@ -1,0 +1,59 @@
+/* #preloader {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  visibility: hidden;
+} */
+.pre-left,
+.pre-right {
+  position: fixed;
+  width: 80vw;
+  height: 100%;
+  z-index: 10000;
+  visibility: hidden;
+  background-color: black;
+}
+.pre-left {
+  /* left: 50%; */
+  animation-name: entryAnimationLeft;
+  animation-duration: 1.8s;
+  /* animation-delay: 0.8s; */
+}
+.pre-right {
+  /* left: 0%; */
+  animation-name: entryAnimationRight;
+  animation-duration: 1.8s;
+  /* animation-delay: 0.8s; */
+}
+
+@keyframes entryAnimationLeft {
+  from {
+    left: 0%;
+    background-color: black;
+    z-index: 100000;
+    visibility: visible;
+  }
+  to {
+    left: -80%;
+    background-color: black;
+    z-index: 100000;
+  }
+}
+@keyframes entryAnimationRight {
+  from {
+    left: 20%;
+
+    visibility: visible;
+
+    background-color: black;
+    z-index: 100000;
+  }
+  to {
+    left: 100%;
+
+    background-color: black;
+    z-index: 100000;
+  }
+}

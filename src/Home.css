@@ -1,0 +1,130 @@
+#home {
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  background-position: left bottom;
+  padding: 200px 0 100px;
+  position: relative;
+}
+.particle-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+}
+.home-items {
+  position: relative;
+  z-index: 5;
+}
+.left {
+  padding: 0 15px;
+}
+.left > h1 {
+  padding: 0 0 25px;
+  font-size: 40px;
+  color: #fff;
+}
+.left > h5 {
+  padding: 0 0 8px;
+  font-size: 20px;
+}
+.gradient_box {
+  padding: 0 8px;
+  background: linear-gradient(to right, #ff67cb 0%, #ffcc67 99%) !important;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.left .transparent_bg {
+  padding: 20px 0;
+  font-size: 16px;
+  color: #7a7a7a;
+  max-width: 390px;
+  border-radius: 10px;
+}
+.left .transparent_bg .tk_countdown_time {
+  padding: 10px;
+  font-size: 16px;
+}
+.left .btn_group {
+  padding: 8px 0 16px;
+}
+.btn-2 {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 40px;
+  background-image: linear-gradient(to right, #ffcc67 0%, #ff67cb 99%);
+  position: relative;
+  outline: none;
+  z-index: 2;
+  text-decoration: none;
+}
+.btn-2::after {
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease 0s;
+  z-index: -1;
+  background-color: #0c0e27;
+  border-radius: 40px;
+}
+.btn-2:hover::after,
+.btn-2:hover {
+  background-color: transparent !important;
+  color: #fff;
+  text-decoration: none;
+}
+.right {
+  padding: 0 15px;
+}
+.right > img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .left {
+    text-align: center;
+  }
+  .left .transparent_bg {
+    margin: 0 auto;
+  }
+  .right {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section_banner {
+    padding: 100px 0 30px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .section_banner {
+    padding: 100px 0 50px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .section_banner {
+    padding: 150px 0 80px;
+  }
+}
